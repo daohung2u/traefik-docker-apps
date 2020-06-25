@@ -1,3 +1,16 @@
+Triển khai traefik docker services
+
+Docker services
+```
+* Traefik
+* Mysql
+* Whoami
+* Redmine
+* Wordpress
+```
+
+Sample
+```yaml
 version: "3"
 
 services:
@@ -105,3 +118,5 @@ services:
     labels:
       # traefik read host name and route to this if treafik receive request like Host
       - "traefik.http.routers.wordpress.rule=Host(`wordpress.local`)"
+
+```
